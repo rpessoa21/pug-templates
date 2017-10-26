@@ -1,0 +1,21 @@
+extends ./layout.pug
+
+block title
+	- var titlePage = 'Home'
+
+block vars
+	- var bodyClass = 'index'
+
+block content
+	section.section
+		block template
+		h1= titlePage
+
+		ul
+			li
+				span= valor
+
+
+		h2= nameProduct
+
+		div !{descriptionProduct}
